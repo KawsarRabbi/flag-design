@@ -1,0 +1,470 @@
+/*========Common CSS Start========*/
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+:root {
+    --primary-color-deep: #153448;
+    --primary-color-deepLess: #3C5B6F;
+    --primary-color-light: #948979;
+    --primary-color-lightMore: #DFD0B8;
+    --primary-color-black: #000000;
+    --primary-color-white: #ffffff;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+.cls {
+    clear: both;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/*========Common CSS End========*/
+
+/* ==========Common Flag CSS========== */
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flagCard {
+    width: 400px;
+    height: 300px;
+    background: var(--primary-color-deep);
+    border: 2px solid var(--primary-color-deep);
+    margin: 5px;
+    transition: .4s;
+}
+.flagCard:hover {
+    transform: scale(0.9);
+}
+.flagCard:hover {
+    background: var(--primary-color-deepLess);
+    border: 2px solid var(--primary-color-deepLess);
+}
+.flag {
+    width: 100%;
+    height: 250px;
+    background: var(--primary-color-light);
+}
+h4.flagTitle {
+    color: var(--primary-color-lightMore);
+    text-align: center;
+    line-height: 3;
+}
+
+/* ==========For Pakistan Flag========== */
+.pak_whiteShape {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+.pak_greenShape {
+    width: 75%;
+    height: 100%;
+    background-color: #01411C;
+    float: left;
+    position: relative;
+}
+.pak_halfMoon {
+    clip-path: circle(50% at 50% 50%);
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.pak_halfMoon2 {
+    clip-path: circle(50% at 50% 50%);
+    background-color: #01411C;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 59%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+.pak_halfMoon3 {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 70px;
+    height: 70px;
+    background: white;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+}
+
+/* ==========For China Flag========== */
+.china_redShape {
+    width: 100%;
+    height: 100%;
+    background-color: #DE2810;
+    float: left;
+    position: relative;
+}
+.china_starMain {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 80px;
+    height: 80px;
+    background: #FFDE00;
+    position: absolute;
+    top: 38px;
+    left: 25px;
+}
+.china_mini_star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 25px;
+    height: 25px;
+    background: #FFDE00;
+    position: absolute;
+}
+.china_star2 {
+    top: 20px;
+    left: 130px;
+}
+.china_star3 {
+    top: 50px;
+    left: 160px;
+}
+.china_star4 {
+    top: 91px;
+    left: 160px;
+}
+.china_star5 {
+    top: 120px;
+    left: 130px;
+}
+
+/* ==========For Scotland Flag========== */
+.scot_main_shape {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+.scot_shape_common {
+    background-color: #005CB9;
+    position: absolute;
+}
+.scot_top {
+    clip-path: polygon(100% 0, 0 0, 50% 50%);
+    width: 82%;
+    height: 82%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scot_left {
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    width: 38%;
+    height: 75%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.scot_right {
+    clip-path: polygon(100% 100%, 100% 0, 0 50%);
+    width: 38%;
+    height: 75%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.scot_bottom {
+    clip-path: polygon(100% 100%, 50% 50%, 0 100%);
+    width: 82%;
+    height: 82%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ==========For North Korea Flag========== */
+.nKorea_main_shape {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+.nKorea_top {
+    width: 100%;
+    height: 20%;
+    background-color: #024FA1;
+    margin-bottom: 7px;
+}
+.nKorea_middle {
+    width: 100%;
+    height: 55%;
+    background-color: #EE1C27;
+    position: relative;
+}
+.nKorea_middle_circle {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+.nKorea_middle_star {
+    background-color: #EE1C27;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+.nKorea_bottom {
+    width: 100%;
+    height: 20%;
+    background-color: #024FA1;
+    margin-top: 7px;
+}
+
+/* ==========For Taiwan Flag========== */
+.taiwan_main_shape {
+    background-color: #EC1D23;
+    width: 100%;
+    height: 100%;
+}
+.taiwan_under_mini {
+    width: 50%;
+    height: 50%;
+    background-color: #2A3086;
+    position: relative;
+}
+.taiwan_star_1 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.taiwan_star_2 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(37deg);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.taiwan_circle_1 {
+    width: 58px;
+    height: 58px;
+    background-color: #2A3086;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: circle(50% at 50% 50%);
+}
+.taiwan_circle_2 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: circle(50% at 50% 50%);
+}
+
+/* ==========For Qatar Flag========== */
+.qatar_main_shape {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    display: flex;
+}
+.qatar_left_shape {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+.qatar_right_shape {
+    width: 60%;
+    height: 100%;
+    background-color: #8D1B3D;
+}
+.qt_cm_tr {
+    clip-path: polygon(0 50%, 100% 80%, 100% 20%);
+    width: 50px;
+    height: 45px;
+    background-color: #8D1B3D;
+    position: absolute;
+}
+.qatar_mini_triangle_1 {
+    clip-path: polygon(0 0, 100% 30%, 100% 0);
+    width: 50px;
+    height: 50px;
+    background-color: #8D1B3D;
+    position: absolute;
+    right: -1px;
+    top: 0;
+}
+.qatar_mini_triangle_2 {
+    right: -1px;
+    top: 5px;
+}
+.qatar_mini_triangle_3 {
+    right: -1px;
+    top: 32px;
+}
+.qatar_mini_triangle_4 {
+    right: -1px;
+    top: 59px;
+}
+.qatar_mini_triangle_5 {
+    right: -1px;
+    top: 87px;
+}
+.qatar_mini_triangle_6 {
+    right: -1px;
+    top: 115px;
+}
+.qatar_mini_triangle_7 {
+    right: -1px;
+    top: 143px;
+}
+.qatar_mini_triangle_8 {
+    right: -1px;
+    top: 171px;
+}
+.qatar_mini_triangle_9 {
+    right: -1px;
+    top: 199px;
+}
+.qatar_mini_triangle_10 {
+    clip-path: polygon(0 100%, 100% 100%, 100% 70%);
+    width: 50px;
+    height: 50px;
+    background-color: #8D1B3D;
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+}
+
+/* ==========For Turkey Flag========== */
+.turkey_greenShape {
+    width: 100%;
+    height: 100%;
+    background-color: #E20A17;
+    position: relative;
+}
+.turkey_halfMoon {
+    clip-path: circle(50% at 50% 50%);
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-30%, -50%);
+}
+.turkey_halfMoon2 {
+    clip-path: circle(50% at 50% 50%);
+    background-color: #E20A17;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-40%, -50%);
+}
+.turkey_halfMoon3 {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 70px;
+    height: 70px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-24%, -50%) rotate(60deg);
+}
+
+/* ==========For South Africa Flag========== */
+.sAfrica_main_shape {
+    width: 100%;
+    height: 100%;
+    background: #00794C;
+    position: relative;
+}
+.sAfrica_triange_1 {
+    clip-path: polygon(0 0, 0% 100%, 80% 50%);
+    width: 180px;
+    height: 180px;
+    background-color: #FBB80F;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.sAfrica_triange_2 {
+    clip-path: polygon(0 0, 0% 100%, 80% 50%);
+    width: 150px;
+    height: 150px;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.sAfrica_quadrilateral_1 {
+    clip-path: polygon(100% 0, 100% 30%, 46% 30%, 0 0);
+    width: 350px;
+    height: 350px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sAfrica_quadrilateral_2 {
+    clip-path: polygon(100% 0, 100% 30%, 46% 30%, 0 0);
+    width: 315px;
+    height: 300px;
+    background-color: #DF3830;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sAfrica_quadrilateral_3 {
+    clip-path: polygon(100% 70%, 100% 100%, 0 100%, 46% 70%);
+    width: 350px;
+    height: 350px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.sAfrica_quadrilateral_4 {
+    clip-path: polygon(100% 70%, 100% 100%, 0 100%, 46% 70%);
+    width: 315px;
+    height: 300px;
+    background-color: #002496;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
